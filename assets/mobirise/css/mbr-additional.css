@@ -1267,52 +1267,6 @@ body {
 .cid-qROe68R5in .mbr-section-btn DIV {
   color: #000000;
 }
-.cid-qTjs4YvMSR {
-  padding-top: 60px;
-  padding-bottom: 90px;
-  background-image: url("../../../assets/images/personnagefotolia-32428833-subscription-monthly-m-1688x1125.jpg");
-}
-.cid-qTjs4YvMSR .mbr-iconfont {
-  font-size: 50px;
-  transition: color .3s;
-  padding: 1.5rem;
-}
-.cid-qTjs4YvMSR .mbr-section-title {
-  margin: 0;
-  color: #ffffff;
-}
-.cid-qTjs4YvMSR .mbr-section-subtitle {
-  color: #8d97ad;
-}
-.cid-qTjs4YvMSR .card-img span {
-  color: #6751b3;
-}
-.cid-qTjs4YvMSR .row-item {
-  margin-bottom: 2rem;
-}
-.cid-qTjs4YvMSR .row-item:hover .wrapper {
-  background: linear-gradient(90deg, #964c10, #5eeebb);
-  cursor: pointer;
-  transform: translateY(-10px);
-  transition: all 0.3s;
-}
-.cid-qTjs4YvMSR .row-item:hover .card-img span {
-  color: #ffffff !important;
-}
-.cid-qTjs4YvMSR .row-item:hover .mbr-card-title {
-  color: #ffffff !important;
-}
-.cid-qTjs4YvMSR .wrapper {
-  padding: 2.5rem 1rem;
-  background: #fff;
-  border-radius: 5px;
-  box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
-}
-.cid-qRQn33GfmT {
-  padding-top: 15px;
-  padding-bottom: 30px;
-  background-color: #f4f8fa;
-}
 .cid-qTjkgTeBBp {
   padding-top: 30px;
   padding-bottom: 60px;
@@ -1365,6 +1319,52 @@ body {
 .cid-qTjkgTeBBp .card-title,
 .cid-qTjkgTeBBp .card-img B {
   color: #ffffff;
+}
+.cid-qTjs4YvMSR {
+  padding-top: 60px;
+  padding-bottom: 90px;
+  background-image: url("../../../assets/images/personnagefotolia-32428833-subscription-monthly-m-1688x1125.jpg");
+}
+.cid-qTjs4YvMSR .mbr-iconfont {
+  font-size: 50px;
+  transition: color .3s;
+  padding: 1.5rem;
+}
+.cid-qTjs4YvMSR .mbr-section-title {
+  margin: 0;
+  color: #ffffff;
+}
+.cid-qTjs4YvMSR .mbr-section-subtitle {
+  color: #8d97ad;
+}
+.cid-qTjs4YvMSR .card-img span {
+  color: #6751b3;
+}
+.cid-qTjs4YvMSR .row-item {
+  margin-bottom: 2rem;
+}
+.cid-qTjs4YvMSR .row-item:hover .wrapper {
+  background: linear-gradient(90deg, #964c10, #5eeebb);
+  cursor: pointer;
+  transform: translateY(-10px);
+  transition: all 0.3s;
+}
+.cid-qTjs4YvMSR .row-item:hover .card-img span {
+  color: #ffffff !important;
+}
+.cid-qTjs4YvMSR .row-item:hover .mbr-card-title {
+  color: #ffffff !important;
+}
+.cid-qTjs4YvMSR .wrapper {
+  padding: 2.5rem 1rem;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+}
+.cid-qRQn33GfmT {
+  padding-top: 15px;
+  padding-bottom: 30px;
+  background-color: #f4f8fa;
 }
 .cid-qTjkbPKx1z {
   padding-top: 45px;
