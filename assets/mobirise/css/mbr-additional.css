@@ -2122,8 +2122,8 @@ body {
   padding-bottom: 90px;
 }
 .cid-qTfOxQhvO6 .mbr-overlay {
-  background: #40c41d;
-  background: linear-gradient(90deg, #40c41d, #000000);
+  background: #ffffff;
+  background: linear-gradient(90deg, #ffffff, #000000);
 }
 .cid-qTfSh3Tto2 {
   padding-top: 75px;
@@ -4107,20 +4107,23 @@ body {
     left: -1rem;
   }
 }
-.cid-qTgeTULcdn {
+.cid-qTBmRyKau3 {
   padding-top: 135px;
-  padding-bottom: 135px;
-  background-image: url("../../../assets/images/mbr-4-1620x1080.jpg");
+  padding-bottom: 60px;
+  background-image: url("../../../assets/images/people-1920x1080.jpg");
 }
-.cid-qTgeTULcdn .mbr-overlay {
-  background: #1dc8cc;
-  background: linear-gradient(90deg, #1dc8cc, #000000);
+.cid-qTBmRyKau3 .mbr-overlay {
+  background: #9ac2e7;
+  background: linear-gradient(90deg, #9ac2e7, #ffffff);
+}
+.cid-qTBmRyKau3 H1 {
+  color: #070708;
 }
 .cid-qTgeW5ZpUx {
-  padding-top: 75px;
-  padding-bottom: 75px;
-  background-color: #ffffff;
-  background: linear-gradient(0deg, #ffffff, #ffffff);
+  padding-top: 45px;
+  padding-bottom: 30px;
+  background-color: #d2b16c;
+  background: linear-gradient(0deg, #d2b16c, #ffffff);
 }
 .cid-qTgeW5ZpUx .counter-container {
   color: #767676;
@@ -4157,7 +4160,7 @@ body {
 .cid-qTgh65SgMJ {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-image: url("../../../assets/images/background8.jpg");
+  background-image: url("../../../assets/images/mbr-9-720x1080.jpg");
 }
 .cid-qTgh65SgMJ .card-text,
 .cid-qTgh65SgMJ .mbr-section-subtitle {
