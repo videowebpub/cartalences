@@ -892,8 +892,8 @@ body {
   background-image: url("../../../assets/images/workplace-1245776-1920-1920x1280.jpg");
 }
 .cid-qRO4mUfgSM .mbr-overlay {
-  background: #444444;
-  background: linear-gradient(90deg, #444444, #232323);
+  background: #f4f8fa;
+  background: linear-gradient(90deg, #f4f8fa, #c1c1c1);
 }
 .cid-qRO4mUfgSM .mbr-section-subtitle {
   color: #e3e3e3;
@@ -903,14 +903,14 @@ body {
   color: #ffffff;
 }
 .cid-qRO4mUfgSM B {
-  color: #ffffff;
+  color: #070708;
 }
 .cid-qRO4mUfgSM H1 {
   color: #080805;
 }
 .cid-qRO4mUfgSM .mbr-section-subtitle,
 .cid-qRO4mUfgSM mbr-section-btn {
-  color: #ffffff;
+  color: #070708;
 }
 .cid-qTAO9wBQ3k {
   padding-top: 30px;
