@@ -2610,7 +2610,7 @@ body {
   }
 }
 .cid-qTdFV7rgFF {
-  padding-top: 40px;
+  padding-top: 0px;
   padding-bottom: 0px;
   background-color: #9ac2e7;
 }
@@ -2634,7 +2634,7 @@ body {
   margin-left: -0.8rem;
 }
 .cid-qTdFV7rgFF .mbr-figure {
-  background: #333333;
+  background: #232323;
   overflow: hidden;
   border-radius: .25rem;
   box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
@@ -2671,7 +2671,7 @@ body {
   font-size: 16px !important;
   font-weight: 500;
   background: none;
-  color: #070708;
+  color: #d2b16c;
 }
 @media (max-width: 767px) {
   .cid-qTdFV7rgFF .mbr-text {
