@@ -912,17 +912,6 @@ body {
 .cid-qRO4mUfgSM mbr-section-btn {
   color: #070708;
 }
-.cid-qTAO9wBQ3k {
-  padding-top: 30px;
-  padding-bottom: 0px;
-  background-color: #ffffff;
-}
-.cid-qTAO9wBQ3k .mbr-section-subtitle {
-  color: #8d97ad;
-}
-.cid-qTAO9wBQ3k .mbr-section-title {
-  text-align: center;
-}
 .cid-qRNWvTehN4 .dropdown-item:before {
   font-family: MobiriseIcons !important;
   content: '\e966';
@@ -1331,9 +1320,9 @@ body {
   color: #070708;
 }
 .cid-qTAPhDHNoe {
-  padding-top: 90px;
-  padding-bottom: 90px;
-  background-color: #f4f8fa;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-image: url("../../../assets/images/mbr-3-1440x1080.jpg");
 }
 .cid-qTAPhDHNoe .mbr-iconfont {
   font-size: 50px;
@@ -1342,27 +1331,28 @@ body {
 }
 .cid-qTAPhDHNoe .mbr-section-title {
   margin: 0;
+  color: #ffffff;
 }
 .cid-qTAPhDHNoe .mbr-section-subtitle {
   color: #8d97ad;
 }
 .cid-qTAPhDHNoe .card-img span {
-  color: #1dc9cb;
+  color: #a61a3d;
 }
 .cid-qTAPhDHNoe .row-item {
   margin-bottom: 2rem;
 }
 .cid-qTAPhDHNoe .row-item:hover .wrapper {
-  background: linear-gradient(90deg, #369898, #5eeebb);
+  background: linear-gradient(90deg, #2bdc9d, #8264fd);
   cursor: pointer;
   transform: translateY(-10px);
   transition: all 0.3s;
 }
 .cid-qTAPhDHNoe .row-item:hover .card-img span {
-  color: #ffffff !important;
+  color: #000000 !important;
 }
 .cid-qTAPhDHNoe .row-item:hover .mbr-card-title {
-  color: #ffffff !important;
+  color: #000000 !important;
 }
 .cid-qTAPhDHNoe .wrapper {
   padding: 2.5rem 1rem;
