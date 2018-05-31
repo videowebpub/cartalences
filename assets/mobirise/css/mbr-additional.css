@@ -1255,13 +1255,13 @@ body {
 }
 .cid-qTpsKH7tzu {
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 0px;
   background-color: #a61a3d;
 }
 .cid-qTB3LTtPSm {
-  padding-top: 120px;
-  padding-bottom: 90px;
-  background-image: url("../../../assets/images/career-111932-1920-1920x1351.jpg");
+  padding-top: 60px;
+  padding-bottom: 0px;
+  background-image: url("../../../assets/images/mbr-1626x1080.jpg");
 }
 .cid-qTB3LTtPSm .main-row {
   justify-content: space-between;
@@ -2610,13 +2610,14 @@ body {
   }
 }
 .cid-qTdFV7rgFF {
-  padding-top: 0px;
+  padding-top: 40px;
   padding-bottom: 0px;
-  background-color: #efefef;
-  background: linear-gradient(90deg, #efefef, #e99049);
+  background-color: #9ac2e7;
 }
 .cid-qTdFV7rgFF .main-row {
   justify-content: space-between;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
 }
 .cid-qTdFV7rgFF .section-text {
   color: #000000;
@@ -2626,6 +2627,8 @@ body {
 }
 .cid-qTdFV7rgFF .media-content {
   padding-left: 0;
+  padding-right: 0;
+  padding-left: 1.5rem;
 }
 .cid-qTdFV7rgFF .mbr-section-btn {
   margin-left: -0.8rem;
@@ -2668,7 +2671,7 @@ body {
   font-size: 16px !important;
   font-weight: 500;
   background: none;
-  color: #000000;
+  color: #070708;
 }
 @media (max-width: 767px) {
   .cid-qTdFV7rgFF .mbr-text {
@@ -3683,47 +3686,6 @@ body {
 }
 .cid-qTge8MarL9 .mbr-section-title {
   color: #000000;
-}
-.cid-qTfMOtTN64 {
-  padding-top: 0px;
-  padding-bottom: 45px;
-  background-image: url("../../../assets/images/business-3044664-1921-1920x1280.png");
-}
-.cid-qTfMOtTN64 .mbr-iconfont {
-  font-size: 50px;
-  transition: color .3s;
-  padding: 1.5rem;
-}
-.cid-qTfMOtTN64 .mbr-section-title {
-  margin: 0;
-  color: #ffffff;
-}
-.cid-qTfMOtTN64 .mbr-section-subtitle {
-  color: #8d97ad;
-}
-.cid-qTfMOtTN64 .card-img span {
-  color: #6751b3;
-}
-.cid-qTfMOtTN64 .row-item {
-  margin-bottom: 2rem;
-}
-.cid-qTfMOtTN64 .row-item:hover .wrapper {
-  background: linear-gradient(90deg, #964c10, #5eeebb);
-  cursor: pointer;
-  transform: translateY(-10px);
-  transition: all 0.3s;
-}
-.cid-qTfMOtTN64 .row-item:hover .card-img span {
-  color: #ffffff !important;
-}
-.cid-qTfMOtTN64 .row-item:hover .mbr-card-title {
-  color: #ffffff !important;
-}
-.cid-qTfMOtTN64 .wrapper {
-  padding: 2.5rem 1rem;
-  background: #fff;
-  border-radius: 5px;
-  box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
 }
 .cid-qTfMXDtaBk {
   padding-top: 60px;
