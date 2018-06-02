@@ -1818,6 +1818,7 @@ body {
   padding-top: 0px;
   padding-bottom: 0px;
   background-color: #9ac2e7;
+  background: linear-gradient(90deg, #9ac2e7, #d2b16c);
 }
 .cid-qTdFV7rgFF .main-row {
   justify-content: space-between;
@@ -1882,11 +1883,6 @@ body {
   .cid-qTdFV7rgFF .mbr-text {
     text-align: center;
   }
-}
-.cid-qTprGWT8uL {
-  padding-top: 30px;
-  padding-bottom: 15px;
-  background-color: #000000;
 }
 .cid-qTMbi2Xy44 {
   padding-top: 60px;
