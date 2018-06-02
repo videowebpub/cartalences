@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Cartalences 02",
-    "currentPage": "index.html",
+    "currentPage": "page5.html",
     "theme": {
       "name": "businessm4",
       "title": "Business M4",
@@ -39,7 +39,7 @@
       ]
     },
     "versionFirst": "4.7.1",
-    "uniqCompNum": 205,
+    "uniqCompNum": 206,
     "versionPublish": "4.7.1",
     "path": "@PROJECT_PATH@",
     "screenshot": "screenshot.png",
@@ -640,7 +640,7 @@
           "_params": {
             "paddingTop": "1",
             "paddingBottom": "1",
-            "postToLoad": "4",
+            "postToLoad": "10",
             "facebook": "https://www.facebook.com/search/posts/?q=cartalences",
             "twitter": "",
             "google": "",
@@ -659,98 +659,6 @@
           ],
           "_name": "feed",
           "_anchor": "feed-5k"
-        },
-        {
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'color')": {
-              "background": "linear-gradient(45deg, @bg-value, @bgColor2)"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            ".carousel-item": {
-              "justify-content": "center"
-            },
-            ".carousel-item.active, .carousel-item-next, .carousel-item-prev": {
-              "display": "flex"
-            },
-            ".carousel-controls": {
-              "a": {
-                "transition": "opacity .5s",
-                "font-size": "2rem",
-                "width": "20%",
-                "span": {
-                  "position": "absolute",
-                  "top": "45%",
-                  "font-size": "1.2rem",
-                  "padding": "15px",
-                  "border-radius": "50%",
-                  "color": "contrast(@arrowColor)",
-                  "background": "@arrowColor",
-                  "opacity": ".9"
-                },
-                "&:hover": {
-                  "span": {
-                    "opacity": "1"
-                  }
-                }
-              }
-            },
-            ".user_image": {
-              "width": "100px",
-              "height": "100px",
-              "margin-bottom": "1.6rem",
-              "overflow": "hidden",
-              "border-radius": "50%",
-              "background": "#ffffff",
-              "margin": "1rem auto 1rem auto",
-              "display": "flex",
-              "img": {
-                "width": "100%",
-                "min-width": "100%",
-                "min-height": "100%"
-              }
-            },
-            ".mbr-iconfont": {
-              "font-size": "3rem",
-              "position": "absolute",
-              "opacity": "@quotesOpacity",
-              "color": "@quotesColor",
-              "&.left-top": {
-                "top": "0",
-                "left": "0"
-              },
-              "&.right-bottom": {
-                "bottom": "1rem",
-                "right": "0"
-              }
-            },
-            ".user_text": {
-              "color": "#767676",
-              "position": "relative",
-              "@media (min-width: 768px)": {
-                "p": {
-                  "padding": "1rem 4rem"
-                }
-              }
-            },
-            "@media (max-width: 230px)": {
-              ".user_image": {
-                "width": "100%",
-                "height": "auto"
-              }
-            }
-          },
-          "_name": "testimonials1",
-          "_customHTML": "<section class=\"carousel slide testimonials-slider testimonials1\" group=\"Testimonials\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins=\"BootstrapCarouselSwipe,mbr-testimonials-slider\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" title=\"Padding Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\" inline>\n        <input type=\"range\" title=\"Padding Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\" inline>\n        <input type=\"range\" inline title=\"Count Items\" name=\"testimonialsSlides\" min=\"1\" max=\"20\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Author Name\" name=\"showName\">\n        <input type=\"checkbox\" title=\"Show Author Title\" name=\"showDesk\">\n        \n        <input type=\"checkbox\" title=\"Show Quotes\" name=\"showQuotes\" checked>\n        <input type=\"range\" inline title=\"Quotes Opacity\" name=\"quotesOpacity\" min=\"0\" max=\"1\" value=\"0.3\" step=\"0.1\" condition=\"showQuotes\">\n        <input type=\"color\" title=\"Quotes Color\" name=\"quotesColor\" value=\"#a61a3d\" condition=\"showQuotes\">\n    \n        <input type=\"color\" title=\"Arrow Color\" name=\"arrowColor\" value=\"#ffffff\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#8264fd\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://youtu.be/iM-NestDPNQ\">\n        </fieldset>\n        <input type=\"color\" title=\"BG Color 2\" name=\"bgColor2\" value=\"#dc972f\" condition=\"bg.type=='color'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container text-center\">\n        <h2 class=\"mbr-fonts-style .mbr-section-title mbr-white\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n            Nos clients satisfaits</h2>\n\n        <div class=\"carousel slide\" data-ride=\"carousel\" role=\"listbox\" mbr-class=\"{'pt-3': showTitle}\">\n            <div mbr-list mbr-list-grow=\"testimonialsSlides\" class=\"carousel-inner\">\n                <div class=\"carousel-item\">\n                    <div class=\"user col-md-10 col-lg-8\">\n                        <div class=\"user_text pb-3\">\n                            <span mbr-icon class=\"left-top mbr-iconfont mbri-quote-left inactive\" mbr-if=\"showQuotes\"></span>\n                            <p class=\"mbr-fonts-style mbr-text m-0 mbr-white\" mbr-theme-style=\"display-7\" data-app-selector=\".user_text\">≪ Je désire recommander les services de Madame Sandra Dumais en Gestion des Ressources humaines. Elle a su démontrer un degré élevé d’autonomie, un excellent esprit d’initiative et s’est acquittée avec professionnalisme des mandats qui lui ont été confiés, notamment en dotation pour divers postes. De plus, son dévouement, son enthousiasme et ses habiletés interpersonnelles font d’elle une excellente conseillère, prête à relever des défis. Elle représente un atout certain pour toute organisation. C’est donc sans hésitation que je vous la recommande. ≫<br><br><br>Julie Tessier, Directrice des ressources humaines, Groupe Maskatel LP</p>\n                            <span mbr-icon class=\"right-bottom mbr-iconfont mbri-quote-right inactive\" mbr-if=\"showQuotes\"></span>\n                            \n                        </div>\n                        <div class=\"user_image\">\n                            <img src=\"@PROJECT_PATH@/assets/images/bonhommefotolia-51877637-subscription-monthly-m-200x200.jpg\" alt title>\n                        </div>\n                        <div mbr-text class=\"user_name  mbr-fonts-style mbr-white\" mbr-theme-style=\"display-7\" mbr-if=\"showName\" data-app-selector=\".user_name\">\n                            John Smith\n                        </div>\n                        <div mbr-text class=\"user_desk mbr-light mbr-fonts-style mbr-white\" mbr-theme-style=\"display-7\" mbr-if=\"showDesk\" data-app-selector=\".user_desk\">\n                            Project Client\n                        </div>\n                    </div>\n                </div>\n\n            <div class=\"carousel-item\">\n                    <div class=\"user col-md-10 col-lg-8\">\n                        <div class=\"user_text pb-3\">\n                            <span mbr-icon class=\"left-top mbr-iconfont mbri-quote-left inactive\" mbr-if=\"showQuotes\"></span>\n                            <p class=\"mbr-fonts-style mbr-text m-0 mbr-white\" mbr-theme-style=\"display-7\" data-app-selector=\".user_text\">≪ Je désire recommander les services de Madame Sandra Dumais en Gestion des Ressources humaines. Elle a su démontrer un degré élevé d’autonomie, un excellent esprit d’initiative et s’est acquittée avec professionnalisme des mandats qui lui ont été confiés, notamment en dotation pour divers postes. De plus, son dévouement, son enthousiasme et ses habiletés interpersonnelles font d’elle une excellente conseillère, prête à relever des défis. Elle représente un atout certain pour toute organisation. C’est donc sans hésitation que je vous la recommande. ≫<br><br><br>Julie Tessier, Directrice des ressources humaines, Groupe Maskatel LP</p>\n                            <span mbr-icon class=\"right-bottom mbr-iconfont mbri-quote-right inactive\" mbr-if=\"showQuotes\"></span>\n                            \n                        </div>\n                        <div class=\"user_image\">\n                            <img src=\"@PROJECT_PATH@/assets/images/bonhommefotolia-51877637-subscription-monthly-m-200x200.jpg\" alt title>\n                        </div>\n                        <div mbr-text class=\"user_name  mbr-fonts-style mbr-white\" mbr-theme-style=\"display-7\" mbr-if=\"showName\" data-app-selector=\".user_name\">\n                            John Smith\n                        </div>\n                        <div mbr-text class=\"user_desk mbr-light mbr-fonts-style mbr-white\" mbr-theme-style=\"display-7\" mbr-if=\"showDesk\" data-app-selector=\".user_desk\">\n                            Project Client\n                        </div>\n                    </div>\n                </div></div>\n\n            <div class=\"carousel-controls\">\n                <a class=\"carousel-control-prev\" role=\"button\" data-slide=\"prev\">\n                  <span aria-hidden=\"true\" class=\"mbri-left mbr-iconfont\"></span>\n                  <span class=\"sr-only\">Previous</span>\n                </a>\n                \n                <a class=\"carousel-control-next\" role=\"button\" data-slide=\"next\">\n                  <span aria-hidden=\"true\" class=\"mbri-right mbr-iconfont\"></span>\n                  <span class=\"sr-only\">Next</span>\n                </a>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "qTLUklptzG",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {},
-          "_anchor": "testimonials1-5g"
         },
         {
           "_styles": {
@@ -1514,140 +1422,6 @@
           "_params": {}
         },
         {
-          "_name": "content4",
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "background-color": "@bgColor",
-            "& when (@gradientBg)": {
-              "background": "linear-gradient(0deg, @bgColor, @bgColor2)"
-            },
-            ".counter-container": {
-              "color": "#444444",
-              "ol": {
-                "margin-bottom": "0",
-                "li": {
-                  "margin-bottom": "1rem"
-                },
-                "& when (@stylizedCounters)": {
-                  "counter-reset": "myCounter",
-                  "li": {
-                    "list-style": "none",
-                    "padding-left": ".5rem",
-                    "&:before": {
-                      "position": "absolute",
-                      "left": "0px",
-                      "margin-top": "-10px",
-                      "counter-increment": "myCounter",
-                      "content": "counter(myCounter)",
-                      "display": "inline-block",
-                      "text-align": "center",
-                      "margin": "5px 10px",
-                      "line-height": "35px",
-                      "transition": "all .2s",
-                      "color": "contrast(@counterColor)",
-                      "background": "@counterColor",
-                      "width": "40px",
-                      "height": "40px",
-                      "border-radius": "50%",
-                      "& when (@squareCounters)": {
-                        "border-radius": "0"
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "_customHTML": "<section class=\"mbr-section article content4\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\" checked>\n        <input type=\"checkbox\" title=\"Square Counters\" name=\"squareCounters\" condition=\"stylizedCounters\">\n        <input type=\"color\" title=\"Counter Bg Color\" name=\"counterColor\" value=\"#f5310e\" condition=\"stylizedCounters\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n        <input type=\"checkbox\" title=\"Gradient Background\" name=\"gradientBg\" checked>\n        <input type=\"color\" title=\"Background Color2\" name=\"bgColor2\" value=\"#ffffff\" condition=\"gradientBg\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <h2 class=\"mbr-section-title col-12 col-md-8 mbr-fonts-style align-center pb-3\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>Sur quoi reposent l’expertise et la qualité des services de Cartalences ?</b><div>&nbsp;</div></h2>\n            <div class=\"mbr-text counter-container col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n                <ol>\n                    <li><b>3 champs de compétences pour les particuliers et les organisations : Gestion de Carrière - Évaluation des Talents - Développement des ressources humaines et du plein potentiel</b></li>\n                    <li><b style=\"font-family: inherit; font-size: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; background-color: initial;\">Des qualités analytiques et interpersonnelles, des habiletés supérieures en analyse des personnes et des groupes, une approche psychodynamique et inspirante, des compétences en counseling et coaching;</b></li><li><b>Des outils performants que je crée, développe, sélectionne, adapte, met en place et déploie, jumelés à des tests psychométriques innovants;</b></li><li><b>Un Code d’éthique basé sur le respect et l’authenticité, l’écoute et la compréhension; le non-jugement et l’ouverture aux autres;</b></li><li><b>L’intégration des outils psychométriques Nova à ma gamme de services personnalisés;</b></li><li><b>Le développement et le maintien de relations durables soutenus par une excellente communication et un service après-vente;</b></li><li><b>D’excellents partenaires en ressources humaines et la disponibilité d’excellents fournisseurs, possédant des expertises complémentaires et en qui j’ai développé des liens durables.</b></li>\n                </ol>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_anchor": "content4-1p",
-          "_isUserblock": true,
-          "_cid": "qTdHuOIs9Z",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            ".container-fluid": {
-              "padding": "0 3rem"
-            },
-            ".underline": {
-              "padding-top": ".5rem",
-              "padding-bottom": ".5rem",
-              ".line": {
-                "width": "5rem",
-                "height": "3px",
-                "background": "linear-gradient(to right, @primaryColor, @secondaryColor)",
-                "display": "inline-block"
-              }
-            },
-            ".card": {
-              "margin-bottom": "2rem"
-            },
-            ".card-img": {
-              "width": "auto !important",
-              ".mbr-iconfont": {
-                "color": "@iconsColor",
-                "font-size": "48px",
-                "padding-right": "1rem",
-                "background": "linear-gradient(45deg, @iconsColor, @iconsColor2)",
-                "-webkit-background-clip": "text",
-                "-webkit-text-fill-color": "transparent"
-              }
-            },
-            ".content-row": {
-              "word-wrap": "break-word"
-            },
-            ".media": {
-              "width": "initial",
-              "height": "initial",
-              "margin": "initial",
-              "align-items": "center",
-              ".media-body": {
-                "flex": "none"
-              }
-            },
-            ".mbr-text": {
-              "color": "#ffffff",
-              "margin": "0"
-            },
-            ".card-title": {
-              "color": "#fe525b",
-              "margin": "0"
-            },
-            "@media (max-width: 767px)": {
-              ".card-title, .card-box": {
-                "text-align": "left"
-              },
-              ".container-fluid": {
-                "padding": "0 1rem"
-              }
-            },
-            ".mbr-section-title,.underline B": {
-              "color": "#ffffff"
-            }
-          },
-          "_name": "features8",
-          "_customHTML": "<section class=\"features8\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Underline\" name=\"showUnderline\" condition=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        <select title=\"Rows\" name=\"rowsAmount\">\n            <option value=\"1\" selected>1</option>\n            <option value=\"2\">2</option>\n        </select>\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\" selected>1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n        </select>\n        <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\">\n        <input type=\"color\" title=\"Icons Color\" name=\"iconsColor\" value=\"#ffa0a4\" condition=\"showIcons\">\n        <input type=\"color\" title=\"Icons Color2\" name=\"iconsColor2\" value=\"#a38dfd\" condition=\"showIcons\">\n        <input type=\"checkbox\" title=\"Show Card Title\" name=\"showCardTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/mbr-1623x1080.jpg\" selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\">\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=kI1YE_qenSU\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n   <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container-fluid justify-content-center\">\n        <h2 class=\"mbr-section-title mbr-fonts-style align-center mbr-black\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title,.underline\"><b>Quelle est la valeur ajoutée de mon expertise jumelée avec les outils psychométriques Nova ?</b></h2>\n        <div class=\"underline align-center\" mbr-if=\"showUnderline && showTitle\">\n            <div class=\"line\"></div>\n        </div>\n        <h3 class=\"mbr-section-subtitle mbr-fonts-style pb-5 pt-3 mbr-light align-center mbr-black\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis pulvinar vestibulum. Doneceleifend, sem sed dictum.\n        </h3>\n        \n        <div class=\"row content-row\" mbr-class=\"{'pt-5':!showSubtitle}\">\n            <div class=\"card pl-3 pr-3 col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"media pb-3\">\n                    <div class=\"card-img align-self-center\" mbr-if=\"showIcons\">\n                        <span mbr-icon class=\"mbrib-refresh mbr-iconfont\"></span>\n                    </div>\n                    <div class=\"media-body\">\n                        <h4 class=\"card-title py-2 align-left mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardTitle\" data-app-selector=\".card-title\"></h4>\n                    </div>\n                </div>                \n                <div class=\"card-box align-left\">\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">Avec clarté et précision, je dresse un portrait du potentiel, de la personnalité, des talents, des motivations et des tendances comportementales;<br>➢ J’utilise Nova en complément à votre coaching de carrière, développement professionnel, consolidation d’équipes, création d’équipes performantes, acquisition de personnel-clé, gestion de la relève, formation sur mesure, développement du leadership et de la communication, coaching, etc.<br><br><br><br></p>\n                </div>\n            </div>\n\n            <div class=\"card pl-3 pr-3 col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\" mbr-if=\"cardsAmount > 1\">\n                <div class=\"media pb-3\">\n                    <div class=\"card-img align-self-center\" mbr-if=\"showIcons\">\n                        <span mbr-icon class=\"mbrib-hearth mbr-iconfont\"></span>\n                    </div>\n                    <div class=\"media-body\">\n                        <h4 class=\"card-title py-2 align-left mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardTitle\" data-app-selector=\".card-title\">\n                            We Love\n                        </h4>\n                    </div>\n                </div>                \n                <div class=\"card-box align-left\">\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, suscipit, assumenda? Esse explicabo, facere possimus commodi voluptates hic, nisi consectetur unde inventore obcaecati porro vero quam vitae ipsa. Sint, beatae.\n                    </p>\n                </div>\n            </div>\n\n            <div class=\"card pl-3 pr-3 col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\" mbr-if=\"cardsAmount > 2\">\n                <div class=\"media pb-3\">\n                    <div class=\"card-img align-self-center\" mbr-if=\"showIcons\">\n                        <span mbr-icon class=\"mbrib-like mbr-iconfont\"></span>\n                    </div>\n                    <div class=\"media-body\">\n                        <h4 class=\"card-title py-2 align-left mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardTitle\" data-app-selector=\".card-title\">\n                            We recommend\n                        </h4>\n                    </div>\n                </div>                \n                <div class=\"card-box align-left\">\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, suscipit, assumenda? Esse explicabo, facere possimus commodi voluptates hic, nisi consectetur unde inventore obcaecati porro vero quam vitae ipsa. Sint, beatae.\n                    </p>\n                </div>\n            </div>\n\n            <div class=\"card pl-3 pr-3 col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\" mbr-if=\"cardsAmount > 3\">\n                <div class=\"media pb-3\">\n                    <div class=\"card-img align-self-center\" mbr-if=\"showIcons\">\n                        <span mbr-icon class=\"mbrib-cart-full mbr-iconfont\"></span>\n                    </div>\n                    <div class=\"media-body\">\n                        <h4 class=\"card-title py-2 align-left mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardTitle\" data-app-selector=\".card-title\">\n                            Best Sellers\n                        </h4>\n                    </div>\n                </div>                \n                <div class=\"card-box align-left\">\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, suscipit, assumenda? Esse explicabo, facere possimus commodi voluptates hic, nisi consectetur unde inventore obcaecati porro vero quam vitae ipsa. Sint, beatae.\n                    </p>\n                </div>\n            </div>\n        </div>\n        \n        <div class=\"row content-row\" mbr-if=\"rowsAmount > 1\">\n            <div class=\"card pl-3 pr-3 col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"media pb-3\">\n                    <div class=\"card-img align-self-center\" mbr-if=\"showIcons\">\n                        <span mbr-icon class=\"mbrib-refresh mbr-iconfont\"></span>\n                    </div>\n                    <div class=\"media-body\">\n                        <h4 class=\"card-title py-2 align-left mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardTitle\" data-app-selector=\".card-title\">\n                            Restocked\n                        </h4>\n                    </div>\n                </div>                \n                <div class=\"card-box align-left\">\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, suscipit, assumenda? Esse explicabo, facere possimus commodi voluptates hic, nisi consectetur unde inventore obcaecati porro vero quam vitae ipsa. Sint, beatae.\n                    </p>\n                </div>\n            </div>\n\n            <div class=\"card pl-3 pr-3 col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\" mbr-if=\"cardsAmount > 1\">\n                <div class=\"media pb-3\">\n                    <div class=\"card-img align-self-center\" mbr-if=\"showIcons\">\n                        <span mbr-icon class=\"mbrib-hearth mbr-iconfont\"></span>\n                    </div>\n                    <div class=\"media-body\">\n                        <h4 class=\"card-title py-2 align-left mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardTitle\" data-app-selector=\".card-title\">\n                            We Love\n                        </h4>\n                    </div>\n                </div>                \n                <div class=\"card-box align-left\">\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, suscipit, assumenda? Esse explicabo, facere possimus commodi voluptates hic, nisi consectetur unde inventore obcaecati porro vero quam vitae ipsa. Sint, beatae.\n                    </p>\n                </div>\n            </div>\n\n            <div class=\"card pl-3 pr-3 col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\" mbr-if=\"cardsAmount > 2\">\n                <div class=\"media pb-3\">\n                    <div class=\"card-img align-self-center\" mbr-if=\"showIcons\">\n                        <span mbr-icon class=\"mbrib-like mbr-iconfont\"></span>\n                    </div>\n                    <div class=\"media-body\">\n                        <h4 class=\"card-title py-2 align-left mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardTitle\" data-app-selector=\".card-title\">\n                            We recommend\n                        </h4>\n                    </div>\n                </div>                \n                <div class=\"card-box align-left\">\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, suscipit, assumenda? Esse explicabo, facere possimus commodi voluptates hic, nisi consectetur unde inventore obcaecati porro vero quam vitae ipsa. Sint, beatae.\n                    </p>\n                </div>\n            </div>\n\n            <div class=\"card pl-3 pr-3 col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\" mbr-if=\"cardsAmount > 3\">\n                <div class=\"media pb-3\">\n                    <div class=\"card-img align-self-center\" mbr-if=\"showIcons\">\n                        <span mbr-icon class=\"mbrib-cart-full mbr-iconfont\"></span>\n                    </div>\n                    <div class=\"media-body\">\n                        <h4 class=\"card-title py-2 align-left mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardTitle\" data-app-selector=\".card-title\">\n                            Best Sellers\n                        </h4>\n                    </div>\n                </div>                \n                <div class=\"card-box align-left\">\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, suscipit, assumenda? Esse explicabo, facere possimus commodi voluptates hic, nisi consectetur unde inventore obcaecati porro vero quam vitae ipsa. Sint, beatae.\n                    </p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_anchor": "features8-1q",
-          "_isUserblock": true,
-          "_cid": "qTdIYb3m79",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
           "_styles": {
             "padding-top": "(@paddingTop * 15px)",
             "padding-bottom": "(@paddingBottom * 15px)",
@@ -1658,6 +1432,99 @@
           "_anchor": "content1-4a",
           "_isUserblock": true,
           "_cid": "qTprGWT8uL",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background": "linear-gradient(45deg, @bg-value, @bgColor2)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".carousel-item": {
+              "justify-content": "center"
+            },
+            ".carousel-item.active, .carousel-item-next, .carousel-item-prev": {
+              "display": "flex"
+            },
+            ".carousel-controls": {
+              "a": {
+                "transition": "opacity .5s",
+                "font-size": "2rem",
+                "width": "20%",
+                "span": {
+                  "position": "absolute",
+                  "top": "45%",
+                  "font-size": "1.2rem",
+                  "padding": "15px",
+                  "border-radius": "50%",
+                  "color": "contrast(@arrowColor)",
+                  "background": "@arrowColor",
+                  "opacity": ".9"
+                },
+                "&:hover": {
+                  "span": {
+                    "opacity": "1"
+                  }
+                }
+              }
+            },
+            ".user_image": {
+              "width": "100px",
+              "height": "100px",
+              "margin-bottom": "1.6rem",
+              "overflow": "hidden",
+              "border-radius": "50%",
+              "background": "#ffffff",
+              "margin": "1rem auto 1rem auto",
+              "display": "flex",
+              "img": {
+                "width": "100%",
+                "min-width": "100%",
+                "min-height": "100%"
+              }
+            },
+            ".mbr-iconfont": {
+              "font-size": "3rem",
+              "position": "absolute",
+              "opacity": "@quotesOpacity",
+              "color": "@quotesColor",
+              "&.left-top": {
+                "top": "0",
+                "left": "0"
+              },
+              "&.right-bottom": {
+                "bottom": "1rem",
+                "right": "0"
+              }
+            },
+            ".user_text": {
+              "color": "#767676",
+              "position": "relative",
+              "@media (min-width: 768px)": {
+                "p": {
+                  "padding": "1rem 4rem"
+                }
+              }
+            },
+            "@media (max-width: 230px)": {
+              ".user_image": {
+                "width": "100%",
+                "height": "auto"
+              }
+            }
+          },
+          "_name": "testimonials1",
+          "_customHTML": "<section class=\"carousel slide testimonials-slider testimonials1\" group=\"Testimonials\" data-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins=\"BootstrapCarouselSwipe,mbr-testimonials-slider\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" title=\"Padding Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\" inline=\"\">\n        <input type=\"range\" title=\"Padding Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\" inline=\"\">\n        <input type=\"range\" inline=\"\" title=\"Count Items\" name=\"testimonialsSlides\" min=\"1\" max=\"20\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Author Name\" name=\"showName\">\n        <input type=\"checkbox\" title=\"Show Author Title\" name=\"showDesk\">\n        \n        <input type=\"checkbox\" title=\"Show Quotes\" name=\"showQuotes\" checked=\"\">\n        <input type=\"range\" inline=\"\" title=\"Quotes Opacity\" name=\"quotesOpacity\" min=\"0\" max=\"1\" value=\"0.3\" step=\"0.1\" condition=\"showQuotes\">\n        <input type=\"color\" title=\"Quotes Color\" name=\"quotesColor\" value=\"#a61a3d\" condition=\"showQuotes\">\n    \n        <input type=\"color\" title=\"Arrow Color\" name=\"arrowColor\" value=\"#ffffff\">\n        <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background1-2.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#8264fd\" selected=\"\">\n            <input type=\"video\" title=\"Background Video\" value=\"https://youtu.be/iM-NestDPNQ\">\n        </fieldset>\n        <input type=\"color\" title=\"BG Color 2\" name=\"bgColor2\" value=\"#dc972f\" condition=\"bg.type=='color'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container text-center\">\n        <h2 class=\"mbr-fonts-style .mbr-section-title mbr-white\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n            Nos clients satisfaits</h2>\n\n        <div class=\"carousel slide\" data-ride=\"carousel\" role=\"listbox\" mbr-class=\"{'pt-3': showTitle}\">\n            <div mbr-list=\"\" mbr-list-grow=\"testimonialsSlides\" class=\"carousel-inner\">\n                <div class=\"carousel-item\">\n                    <div class=\"user col-md-10 col-lg-8\">\n                        <div class=\"user_text pb-3\">\n                            <span mbr-icon=\"\" class=\"left-top mbr-iconfont mbri-quote-left inactive\" mbr-if=\"showQuotes\"></span>\n                            <p class=\"mbr-fonts-style mbr-text m-0 mbr-white\" mbr-theme-style=\"display-7\" data-app-selector=\".user_text\">≪ Je désire recommander les services de Madame Sandra Dumais en Gestion des Ressources humaines. Elle a su démontrer un degré élevé d’autonomie, un excellent esprit d’initiative et s’est acquittée avec professionnalisme des mandats qui lui ont été confiés, notamment en dotation pour divers postes. De plus, son dévouement, son enthousiasme et ses habiletés interpersonnelles font d’elle une excellente conseillère, prête à relever des défis. Elle représente un atout certain pour toute organisation. C’est donc sans hésitation que je vous la recommande. ≫<br><br><br>Julie Tessier, Directrice des ressources humaines, Groupe Maskatel LP</p>\n                            <span mbr-icon=\"\" class=\"right-bottom mbr-iconfont mbri-quote-right inactive\" mbr-if=\"showQuotes\"></span>\n                            \n                        </div>\n                        <div class=\"user_image\">\n                            <img src=\"@PROJECT_PATH@/assets/images/bonhommefotolia-51877637-subscription-monthly-m-200x200.jpg\" alt=\"\" title=\"\">\n                        </div>\n                        <div mbr-text=\"\" class=\"user_name  mbr-fonts-style mbr-white\" mbr-theme-style=\"display-7\" mbr-if=\"showName\" data-app-selector=\".user_name\">\n                            John Smith\n                        </div>\n                        <div mbr-text=\"\" class=\"user_desk mbr-light mbr-fonts-style mbr-white\" mbr-theme-style=\"display-7\" mbr-if=\"showDesk\" data-app-selector=\".user_desk\">\n                            Project Client\n                        </div>\n                    </div>\n                </div>\n\n            <div class=\"carousel-item\">\n                    <div class=\"user col-md-10 col-lg-8\">\n                        <div class=\"user_text pb-3\">\n                            <span mbr-icon=\"\" class=\"left-top mbr-iconfont mbri-quote-left inactive\" mbr-if=\"showQuotes\"></span>\n                            <p class=\"mbr-fonts-style mbr-text m-0 mbr-white\" mbr-theme-style=\"display-7\" data-app-selector=\".user_text\">≪ Je désire recommander les services de Madame Sandra Dumais en Gestion des Ressources humaines. Elle a su démontrer un degré élevé d’autonomie, un excellent esprit d’initiative et s’est acquittée avec professionnalisme des mandats qui lui ont été confiés, notamment en dotation pour divers postes. De plus, son dévouement, son enthousiasme et ses habiletés interpersonnelles font d’elle une excellente conseillère, prête à relever des défis. Elle représente un atout certain pour toute organisation. C’est donc sans hésitation que je vous la recommande. ≫<br><br><br>Julie Tessier, Directrice des ressources humaines, Groupe Maskatel LP</p>\n                            <span mbr-icon=\"\" class=\"right-bottom mbr-iconfont mbri-quote-right inactive\" mbr-if=\"showQuotes\"></span>\n                            \n                        </div>\n                        <div class=\"user_image\">\n                            <img src=\"@PROJECT_PATH@/assets/images/bonhommefotolia-51877637-subscription-monthly-m-200x200.jpg\" alt=\"\" title=\"\">\n                        </div>\n                        <div mbr-text=\"\" class=\"user_name  mbr-fonts-style mbr-white\" mbr-theme-style=\"display-7\" mbr-if=\"showName\" data-app-selector=\".user_name\">\n                            John Smith\n                        </div>\n                        <div mbr-text=\"\" class=\"user_desk mbr-light mbr-fonts-style mbr-white\" mbr-theme-style=\"display-7\" mbr-if=\"showDesk\" data-app-selector=\".user_desk\">\n                            Project Client\n                        </div>\n                    </div>\n                </div></div>\n\n            <div class=\"carousel-controls\">\n                <a class=\"carousel-control-prev\" role=\"button\" data-slide=\"prev\">\n                  <span aria-hidden=\"true\" class=\"mbri-left mbr-iconfont\"></span>\n                  <span class=\"sr-only\">Previous</span>\n                </a>\n                \n                <a class=\"carousel-control-next\" role=\"button\" data-slide=\"next\">\n                  <span aria-hidden=\"true\" class=\"mbri-right mbr-iconfont\"></span>\n                  <span class=\"sr-only\">Next</span>\n                </a>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "testimonials1-5p",
+          "_isUserblock": true,
+          "_cid": "qTMbi2Xy44",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
