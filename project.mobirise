@@ -625,10 +625,10 @@
         {
           "loadsvg": "@PROJECT_PATH@/assets/images/loading.svg",
           "_params": {
-            "paddingTop": "2",
-            "paddingBottom": 0,
+            "paddingTop": "3",
+            "paddingBottom": "3",
             "postToLoad": "5",
-            "facebook": "https://www.facebook.com/search/posts/?q=cartalences",
+            "facebook": "Cartalences@cartalences.ca",
             "twitter": "",
             "google": "",
             "youtube": "",
