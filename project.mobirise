@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Cartalences 02",
-    "currentPage": "nosservices.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "businessm4",
       "title": "Business M4",
@@ -627,13 +627,13 @@
           "_params": {
             "paddingTop": "1",
             "paddingBottom": "1",
-            "postToLoad": "7",
+            "postToLoad": "4",
             "facebook": "https://www.facebook.com/cartalences.ca/services/",
             "twitter": "",
             "google": "",
             "youtube": "",
             "bgColorRadio": true,
-            "bgColor": "#fff",
+            "bgColor": "#8d97ad",
             "bgImageRadio": false,
             "bgImage": "@ADDONS_PATH@/social-feed/feed/assets/comments_bg.jpg",
             "overlay": true,
