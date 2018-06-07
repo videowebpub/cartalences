@@ -3796,19 +3796,6 @@ body {
     padding-bottom: 1.5rem;
   }
 }
-.cid-qU86Clcvqq {
-  background-image: url("../../../assets/images/discussion-de-groupe-1601x1071.jpg");
-}
-.cid-qU86Clcvqq .mbr-overlay {
-  background: #444444;
-}
-.cid-qU86Clcvqq .mbr-section-subtitle {
-  color: #e3e3e3;
-}
-.cid-qU86Clcvqq .mbr-section-subtitle,
-.cid-qU86Clcvqq mbr-section-btn {
-  color: #ffffff;
-}
 .cid-qRNWvTehN4 .dropdown-item:before {
   font-family: MobiriseIcons !important;
   content: '\e966';
@@ -4133,6 +4120,19 @@ body {
     max-width: calc(100% + 2rem);
     left: -1rem;
   }
+}
+.cid-qUfAVZUHJR {
+  background-image: url("../../../assets/images/discussion-de-groupe-1601x1071.jpg");
+}
+.cid-qUfAVZUHJR .mbr-overlay {
+  background: #444444;
+}
+.cid-qUfAVZUHJR .mbr-section-subtitle {
+  color: #e3e3e3;
+}
+.cid-qUfAVZUHJR .mbr-section-subtitle,
+.cid-qUfAVZUHJR mbr-section-btn {
+  color: #ffffff;
 }
 .cid-qTMChtMptV {
   padding-top: 120px;
