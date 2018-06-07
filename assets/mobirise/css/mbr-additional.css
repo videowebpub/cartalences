@@ -1331,6 +1331,7 @@ body {
 .cid-qTjm3pgzhf .mbr-section-title {
   margin-left: -4px;
   color: #7252f4;
+  text-align: center;
 }
 .cid-qTjm3pgzhf .media-container-column {
   width: 100%;
@@ -1373,6 +1374,9 @@ body {
   .cid-qTjm3pgzhf .form-group {
     flex-direction: row;
   }
+}
+.cid-qTjm3pgzhf .mbr-text {
+  text-align: center;
 }
 .cid-qU3JUZkK1w {
   padding-top: 120px;
