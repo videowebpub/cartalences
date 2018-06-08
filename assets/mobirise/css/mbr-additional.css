@@ -3161,7 +3161,8 @@ body {
 .cid-qTD9jfQyrY {
   padding-top: 100px;
   padding-bottom: 30px;
-  background-image: url("../../../assets/images/career-111932-1920-1920x1351.jpg");
+  background-color: #ffffff;
+  background: linear-gradient(90deg, #ffffff, #ffffff);
 }
 .cid-qTD9jfQyrY .main-row {
   justify-content: space-between;
@@ -3233,20 +3234,11 @@ body {
 .cid-qTD9jfQyrY .section-text DIV {
   color: #000000;
 }
-.cid-qTDalkSZMU {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background-color: #0e8f61;
-  background: linear-gradient(90deg, #0e8f61, #8264fd);
-}
-.cid-qTDalkSZMU .mbr-overlay {
-  background-color: #5a31fb;
-  background: linear-gradient(90deg, #5a31fb, #000000);
-}
 .cid-qTD738pyiK {
   padding-top: 60px;
   padding-bottom: 30px;
-  background-image: url("../../../assets/images/people-1920x1080.jpg");
+  background-color: #b6add7;
+  background: linear-gradient(90deg, #b6add7, #ffffff);
 }
 .cid-qTD738pyiK .main-row {
   justify-content: space-between;
@@ -3326,25 +3318,13 @@ body {
 .cid-qTD738pyiK .mbr-section-btn I {
   color: #7252f4;
 }
-.cid-qTDaVKso3d {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background-color: #8264fd;
-  background: linear-gradient(90deg, #8264fd, #0e8f61);
-}
-.cid-qTDaVKso3d .mbr-overlay {
-  background-color: #5a31fb;
-  background: linear-gradient(90deg, #5a31fb, #000000);
-}
 .cid-qTD9k2hpF9 {
   padding-top: 120px;
   padding-bottom: 90px;
-  background-image: url("../../../assets/images/mark-516277-1920-1920x1355.jpg");
+  background-color: #ffffff;
 }
 .cid-qTD9k2hpF9 .main-row {
   justify-content: space-between;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
 }
 .cid-qTD9k2hpF9 .section-text {
   color: #000000;
@@ -3354,8 +3334,6 @@ body {
 }
 .cid-qTD9k2hpF9 .media-content {
   padding-left: 0;
-  padding-right: 0;
-  padding-left: 1.5rem;
 }
 .cid-qTD9k2hpF9 .mbr-section-btn {
   margin-left: -0.8rem;
@@ -3419,20 +3397,11 @@ body {
 .cid-qTD9k2hpF9 .mbr-section-btn B {
   color: #7252f4;
 }
-.cid-qTDaXFHKPW {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background-color: #0e8f61;
-  background: linear-gradient(90deg, #0e8f61, #8264fd);
-}
-.cid-qTDaXFHKPW .mbr-overlay {
-  background-color: #5a31fb;
-  background: linear-gradient(90deg, #5a31fb, #000000);
-}
 .cid-qTD9kRtiQH {
   padding-top: 80px;
-  padding-bottom: 0px;
-  background-image: url("../../../assets/images/question-mark-3255118-1920-1920x1080.jpg");
+  padding-bottom: 30px;
+  background-color: #e0b24f;
+  background: linear-gradient(90deg, #e0b24f, #ffffff);
 }
 .cid-qTD9kRtiQH .main-row {
   justify-content: space-between;
@@ -3512,7 +3481,7 @@ body {
 .cid-qUfE12EFj2 {
   padding-top: 120px;
   padding-bottom: 90px;
-  background-image: url("../../../assets/images/design-3142269-1921-1920x1280.jpg");
+  background-color: #ffffff;
 }
 .cid-qUfE12EFj2 .main-row {
   justify-content: space-between;
@@ -3581,20 +3550,10 @@ body {
 .cid-qUfE12EFj2 .mbr-text UL {
   color: #000000;
 }
-.cid-qTDaYBoD4e {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background-color: #8264fd;
-  background: linear-gradient(90deg, #8264fd, #0e8f61);
-}
-.cid-qTDaYBoD4e .mbr-overlay {
-  background-color: #5a31fb;
-  background: linear-gradient(90deg, #5a31fb, #000000);
-}
 .cid-qTMvLCsP8k {
-  padding-top: 45px;
+  padding-top: 105px;
   padding-bottom: 75px;
-  background-color: #ffffff;
+  background-color: #cccccc;
 }
 .cid-qTMvLCsP8k .card-text,
 .cid-qTMvLCsP8k .mbr-section-subtitle {
