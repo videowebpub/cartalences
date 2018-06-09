@@ -646,8 +646,8 @@ a:hover {
   color: #b7b7b7;
 }
 /* Scroll to top button*/
-#scrollToTop a {
-  border-radius: 100px;
+.scrollToTop_wraper {
+  opacity: 0 !important;
 }
 .mbr-arrow-up a {
   width: 61px;
@@ -1549,8 +1549,8 @@ body {
   color: #000000;
 }
 .cid-qU3FTzVW8J {
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 45px;
+  padding-bottom: 15px;
   background-color: #ffffff;
 }
 .cid-qU3FTzVW8J .mbr-text {
@@ -2538,8 +2538,8 @@ body {
   color: #7252f4;
 }
 .cid-qTggwtcIqw {
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 45px;
+  padding-bottom: 15px;
   background-color: #ffffff;
 }
 .cid-qTggwtcIqw .mbr-text {
@@ -2911,7 +2911,7 @@ body {
 }
 .cid-qU8l6iLKfH {
   padding-top: 135px;
-  padding-bottom: 30px;
+  padding-bottom: 75px;
   background-image: url("../../../assets/images/cartalences-cell-sandra-1920x1080.png");
 }
 .cid-qU8l6iLKfH .mbr-section-title {
@@ -2943,8 +2943,8 @@ body {
   color: #ffffff;
 }
 .cid-qU8v6d5mZN {
-  padding-top: 90px;
-  padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 15px;
   background-color: #ffffff;
   background: linear-gradient(90deg, #ffffff, #e7801e);
 }
@@ -2959,8 +2959,8 @@ body {
   color: #000000;
 }
 .cid-qU3FTzVW8J {
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 45px;
+  padding-bottom: 15px;
   background-color: #ffffff;
 }
 .cid-qU3FTzVW8J .mbr-text {
@@ -4272,8 +4272,8 @@ body {
   color: #000000;
 }
 .cid-qU443oMeGN {
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 45px;
+  padding-bottom: 15px;
   background-color: #ffffff;
 }
 .cid-qU443oMeGN .mbr-text {
@@ -4919,8 +4919,8 @@ body {
   color: #000000;
 }
 .cid-qU4cG0uwO9 {
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 45px;
+  padding-bottom: 15px;
   background-color: #ffffff;
 }
 .cid-qU4cG0uwO9 .mbr-text {
